@@ -1,4 +1,3 @@
-import Sidebar from "@/components/layout/Sidebar";
 import { manrope } from "@/utils";
 import type { Metadata } from "next";
 import "./globals.css";
