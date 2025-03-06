@@ -34,11 +34,11 @@ const Sidebar = () => {
               Start Now
               <IconNext className="size-3 animate-bounce-right" />
             </Link>
-            <ModeToggle />
           </>
         ) : (
           <UserButton />
         )}
+        <ModeToggle />
       </div>
     </div>
   );
