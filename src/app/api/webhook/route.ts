@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     // create user to database
     const { id, username, email_addresses, image_url } = msg.data;
     const user = await createUser({
-      username: username!,
+      username: username!, // có ! là khẳng định có
       name: username!,
       clerkId: id,
       email: email_addresses[0].email_address,

@@ -16,4 +16,4 @@ type TCreateUserParams = {
   name?: string;
   avatar?: string;
 };
-export { ActiveLinkProps, TCreateUserParams, TMenuItem };
+export { TActiveLinksProps, TCreateUserParams, TMenuItem };
