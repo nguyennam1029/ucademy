@@ -1,5 +1,3 @@
-
-
 import createUser from "@/lib/actions/user.actions";
 import { WebhookEvent } from "@clerk/nextjs/server";
 import { headers } from "next/headers";
@@ -37,7 +35,7 @@ export async function POST(req: Request) {
     // create user to database
     const { id, username, email_addresses, image_url } = msg.data;
     const user = await createUser({
-      username: username!, // có ! là khẳng định có
+      username: username!,
       name: username!,
       clerkId: id,
       email: email_addresses[0].email_address,
